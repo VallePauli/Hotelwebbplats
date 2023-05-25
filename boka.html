@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Valles Hotelwebbplats">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valles Hotell</title>
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Playfair+Display+SC&display=swap"
+        rel="stylesheet">
+    <!--https://fonts.google.com/specimen/Michroma?preview.text=Grand%20Hotel&preview.size=37&preview.text_type=custom&category=Serif,Sans+Serif&sort=popularity-->
+    <!--vidoe 8 5 min in nst gng-->
+
+</head>
+
+<body>
+    <header>
+        <!--       <img id="logo" src="img/logo.png" alt="Valles logo" />-->
+        <img id="banner" src="img/tinybanner.jpg" alt="Hotell banner" />
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Välkommen</a>
+        <a href="boka.html" class="active">Boka</a>
+        <a href="hitta.html">Hitta</a>
+        <a href="kontakta.html">Kontakta</a>
+        <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <section>
+        <div class="container">
+            <form action="action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Förnamn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Efternamn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="tnr">Telenr</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="tnr" name="firstname" placeholder="Ditt telefonummer..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="email" name="lastname" placeholder="Din email..">
+                        </div>
+                    </div>
+                    <div class="col-25">
+                        <label for="country">Rumstyp</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="" disabled selected>Välj</option>
+                            <option value="australia">Singelrum</option>
+                            <option value="canada">Dubbelrum</option>
+                            <option value="usa">Superiorrum</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Övrigt</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Övrig information.."
+                            style="height:240px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <aside id="welcome">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/tinysingel.jpeg" style="width:100%" alt="Lyxigt rum, Singelrum">
+                <div class="text">Lyxigt rum, &nbsp; Singelrum</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/tinydubbel.jpeg" style="width:100%" alt="Lyxigt rum, Dubbelrum">
+                <div class="text">Lyxigt rum, &nbsp; Dubbelrum</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/tinysuperior.jpeg" style="width:100%" alt="Lyxigt rum, Grand Deluxe Rum">
+                <div class="text">Lyxigt rum, &nbsp; Grand Deluxe Rum</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua."
+    </aside>
+    <footer>
+        Valles Hotell | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56
+    </footer>
+
+    <script src="script-nav.js"></script>
+
+</body>
+
+</html>
